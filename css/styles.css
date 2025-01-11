@@ -828,11 +828,11 @@ position: absolute;
 top: 50%;
 left: 50%;
 transform: translateX(-50%) translateY(-50%);
+border-radius: 4px;
+width: 408px;
+height: 584px;
 
-width: 517px;
-min-height: 794px;
 padding: 40px;
-border-radius: 15px;
 background: #fafafa;
 }
 
@@ -869,23 +869,43 @@ right: 24px;
 
 
 .user-name {
-
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 117%;
+    letter-spacing: 0.04em;
+    color: var(--light-slate);
 }
 
 .modal-form-wrapper {
+    position: relative;
 
 }
 
 .modal-form-input {
     width: 100%;
     height: 40px;
-    padding: 22px 24px;
+    padding: 22px 38px;
+    border: 1px solid var(--iris);
+    border-radius: 4px;
+ 
+ /*
+    outline: transparent;
+*/
+}
+
+.modal-form-input:focus {
+    width: 100%;
+    height: 40px;
+    padding: 22px 38px;
     border: 1px solid var(--iris);
     border-radius: 4px;
 
 }
 
 .modal-form-icon {
+    position: absolute;
+
 
 }
 
