@@ -711,7 +711,7 @@ button {
   fill: #f4f4fd;
 }
 
-/* #region modal   */
+/* #region modal  -------------------------------------------- */
 
 input {
   height: 40px;
@@ -746,11 +746,12 @@ input {
   border-radius: 4px;
   width: 408px;
   min-height: 584px;
-  padding: 40px;
+
   background: #fcfcfc;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 72px 24px 24px 24px;
 }
 
 .modal-btn {
@@ -785,7 +786,12 @@ input {
   fill: #ffffff;
 }
 
-.modal-btn:hover .modal-btn:focus {
+.modal-btn:focus {
+  background-color: #404bbf;
+  border: none;
+}
+
+.modal-btn:hover {
   background-color: #404bbf;
   border: none;
 }
@@ -809,7 +815,6 @@ input {
   gap: 8px;
   border-radius: 4px 0px 0px 0px;
   opacity: 0px;
-  padding: 72px 24px 24px 24px;
 }
 
 .modal-form-field {
@@ -836,7 +841,7 @@ input {
   position: relative;
   width: 360px;
   height: 40px;
-  top: 18px;
+
   gap: 0px;
   border-radius: 4px 0px 0px 0px;
   border: 1px 0px 0px 0px;
@@ -866,38 +871,6 @@ input:focus {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-form-phone {
-  position: relative;
-  width: 360px;
-  height: 40px;
-  top: 18px;
-  gap: 0px;
-  border-radius: 4px 0px 0px 0px;
-  border: 1px 0px 0px 0px;
-  opacity: 0px;
-}
-.user-phone {
-  width: 360px;
-  height: 40px;
-  top: 84px;
-  gap: 0px;
-  border-radius: 4px 0px 0px 0px;
-  border: 1px 0px 0px 0px;
-  opacity: 0px;
-}
-.modal-form-input {
-}
-.modal-form-email {
-}
-.user-email {
-  width: 360px;
-  height: 40px;
-  top: 150px;
-  gap: 0px;
-  border-radius: 4px 0px 0px 0px;
-  border: 1px 0px 0px 0px;
-  opacity: 0px;
-}
 .modal-form-comment {
   width: 100%;
   height: 120px;
@@ -962,6 +935,7 @@ textarea:focus {
   border: none;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   text-align: center;
+  margin: 0 auto;
 }
 
 /*
