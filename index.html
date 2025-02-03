@@ -496,7 +496,7 @@
         </p>
         <form class="modal-form" name="rewiew">
           <div class="modal-form-field">
-            <label for="user-name" class="user-name">Name</label>
+            <label for="label-name" class="user-name">Name</label>
             <div class="modal-form-wrapper">
               <input
                 class="modal-form-input"
@@ -511,8 +511,8 @@
           </div>
 
           <div class="modal-form-field">
-            <label for="user-phone" class="user-phone"></label>
-            Phone
+            <label for="label-name" class="user-phone">Phone</label>
+
             <div class="modal-form-wrapper">
               <input
                 class="modal-form-input"
@@ -527,8 +527,8 @@
           </div>
 
           <div class="modal-form-field">
-            <label for="user-email" class="user-email"></label>
-            Email
+            <label for="label-name" class="user-email">Email</label>
+
             <div class="modal-form-wrapper">
               <input
                 class="modal-form-input"
@@ -543,17 +543,33 @@
           </div>
 
           <div class="modal-form-field">
-            <label for="user-comment" class="user-comment"></label>
-            Comment
-
+            <label for="label-name" class="user-comment">Comment</label>
             <textarea
-              class="modal-form-input"
+              class="modal-form-comment"
               name="comment"
               rows="5"
               placeholder="Text input"
               id="user-comment"
             ></textarea>
           </div>
+          <div>
+            <input
+              class="modal-form-check visually-hidden"
+              type="checkbox"
+              name="user-privacy"
+              id="user-privacy"
+              value="true"
+            />
+            <label class="label-check" for="user-privacy"
+              ><span class="modal-span">
+                <svg class="modal-ckeck" width="10" height="8">
+                  <use href="./images/svg/checkmodal.svg"></use>
+                </svg> </span
+              >I accept the terms and conditions of the
+              <a class="ckeck-lable">Privacy Policy</a>
+            </label>
+          </div>
+          <button class="modal-but">Send</button>
         </form>
       </div>
     </div>
