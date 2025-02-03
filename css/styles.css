@@ -723,6 +723,9 @@ button {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+  background-color: rgba(46, 47, 66, 0.4);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .is-open {
@@ -738,16 +741,48 @@ button {
   transform: translateX(-50%) translateY(-50%);
   border-radius: 4px;
   width: 408px;
-  height: 584px;
-
+  min-height: 584px;
   padding: 40px;
-  background: #fafafa;
+  background: #fcfcfc;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-btn {
   position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e7e9fc;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   top: 24px;
   right: 24px;
+  height: 24px;
+  border-radius: 50%;
+}
+
+.modal-btn-clouse {
+  width: 8px;
+  height: 8px;
+  top: 8px;
+  left: 8px;
+  gap: 0px;
+  opacity: 0px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-btn-clouse:hover .modal-btn-clouse:focus {
+  fill: #ffffff;
+}
+
+.modal-btn:hover .modal-btn:focus {
+  background-color: #404bbf;
+  border: none;
 }
 
 .modal-caption {
@@ -757,7 +792,8 @@ button {
   line-height: 150%;
   letter-spacing: 0.02em;
   text-align: center;
-  color: var(--navy-blue);
+  color: #2e2f42;
+  margin-bottom: 16px;
 }
 
 .modal-form {
@@ -771,7 +807,8 @@ button {
 }
 
 .modal-form-field {
-  margin-bottom: 18px;
+  padding: 72px 24px 24px 24px;
+  margin-bottom: 8px;
 }
 
 .modal-form-label {
