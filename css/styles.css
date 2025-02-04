@@ -821,6 +821,14 @@ input {
   margin-bottom: 8px;
 }
 
+.comment-mrgn {
+  margin-bottom: 16px;
+}
+
+.modal-form-mrgn {
+  margin-bottom: 24px;
+}
+
 .modal-form-label {
   display: block;
   margin-bottom: 8px;
