@@ -784,6 +784,8 @@ input {
   background-color: rgba(46, 47, 66, 0.4);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
+
 }
 
 .is-open {
@@ -836,8 +838,12 @@ input {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-btn-clouse:hover .modal-btn-clouse:focus {
-  fill: #ffffff;
+.modal-btn:hover .modal-btn-clouse {
+  fill: #ffffff
+}
+
+.modal-btn:focus .modal-btn-clouse {
+  fill: #ffffff
 }
 
 .modal-btn:focus {
@@ -912,13 +918,14 @@ input {
 
 .modal-form-input {
   width: 100%;
-  height: 40px;
+  
   padding: 22px 38px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   background-color: transparent;
   outline: transparent;
   border-radius: 4px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  height: 40px;
 }
 
 input:focus {
@@ -955,13 +962,17 @@ input:checked .modal-span {
   outline: transparent;
   resize: none;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
 }
 
 textarea:focus {
   border-color: #4d5ae5;
 }
 
-.modal-form-check {
+.modal-form-check:checked + .label-check .modal-span {
+  background-color: #404bbf;
+  border: none;
+  fill: #F4F4FD;
 }
 
 .label-check {
@@ -980,10 +991,14 @@ textarea:focus {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
+  margin-right: 8px;
   align-items: center;
   justify-content: center;
   fill: transparent;
+}
+
+.modal-ckeck {
+
 }
 
 .ckeck-lable {
