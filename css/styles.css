@@ -713,6 +713,7 @@ button {
 
 /* #region modal  -------------------------------------------- */
 .subscribe-form {
+  margin-left: 80px;
 }
 .footer-form {
   display: flex;
